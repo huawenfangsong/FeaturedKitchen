@@ -11,6 +11,7 @@
 .mtj.tmp/
 .idea
 build
+run
 # Package Files #
 *.jar
 *.war
