@@ -1,0 +1,35 @@
+{
+	"display": {
+		"icon": {
+			"item": "featured_kitchen:carrot_of_undying"
+		},
+		"title": {
+			"translate": "advancements.kitchen.it_live.title"
+		},
+		"description": {
+			"translate": "advancements.kitchen.it_live.description"
+		},
+		"show_toast": true,
+		"announce_to_chat":true,
+		"hidden": false
+	},
+	"parent": "featured_kitchen:kitchen/root",
+	"criteria": {
+		"it_live": {
+		  "conditions": {
+			"item": 
+			  {
+				"items": [
+				  "featured_kitchen:carrot_of_undying"
+				]
+			  }
+		  },
+		  "trigger": "minecraft:consume_item"
+		}
+	  },
+	  "requirements": [
+		[
+		  "it_live"
+		]
+	  ]
+}

@@ -1,0 +1,12 @@
+{
+  "advancements.kitchen.it_live.description": "\"Kill\" one carrot Of Undying",
+  "advancements.kitchen.it_live.title": "It is alive!",
+  "advancements.kitchen.root.description": "These foods don't taste good",
+  "advancements.kitchen.root.title": "Kitchen",
+  "advancements.kitchen.sea_stew.description": "Drink a bowl of Sea Stew",
+  "advancements.kitchen.sea_stew.title": "The taste of the sea！",
+  "item.featured_kitchen.carrot_of_undying": "Carrot Of Undying",
+  "item.featured_kitchen.gigapple": "Gigapple",
+  "item.featured_kitchen.sea_stew": "Sea Stew",
+  "itemGroup.featured_kitchen": "Featured Kitchen"
+}

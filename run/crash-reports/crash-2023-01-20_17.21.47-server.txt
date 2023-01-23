@@ -1,0 +1,136 @@
+---- Minecraft Crash Report ----
+// Hi. I'm Minecraft, and I'm a crashaholic.
+
+Time: 2023-01-20 17:21:47
+Description: Ticking player
+
+java.lang.NullPointerException: Registry Object not present: featured_kitchen:entity.player.eat_gigapple
+	at java.util.Objects.requireNonNull(Objects.java:334) ~[?:?] {}
+	at net.minecraftforge.registries.RegistryObject.get(RegistryObject.java:204) ~[forge-1.19.3-44.1.5_mapped_official_1.19.3-recomp.jar%23185%23192!/:?] {re:classloading}
+	at com.huawenfangsong.featuredkitchen.item.GigApple.finishUsingItem(GigApple.java:18) ~[%23191!/:?] {re:classloading}
+	at net.minecraft.world.item.ItemStack.finishUsingItem(ItemStack.java:278) ~[forge-1.19.3-44.1.5_mapped_official_1.19.3-recomp.jar%23186!/:?] {re:classloading,xf:fml:forge:itemstack}
+	at net.minecraft.world.entity.LivingEntity.completeUsingItem(LivingEntity.java:3029) ~[forge-1.19.3-44.1.5_mapped_official_1.19.3-recomp.jar%23186!/:?] {re:classloading}
+	at net.minecraft.server.level.ServerPlayer.completeUsingItem(ServerPlayer.java:1116) ~[forge-1.19.3-44.1.5_mapped_official_1.19.3-recomp.jar%23186!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.entity.LivingEntity.updateUsingItem(LivingEntity.java:2911) ~[forge-1.19.3-44.1.5_mapped_official_1.19.3-recomp.jar%23186!/:?] {re:classloading}
+	at net.minecraft.server.level.ServerPlayer.updateUsingItem(ServerPlayer.java:1655) ~[forge-1.19.3-44.1.5_mapped_official_1.19.3-recomp.jar%23186!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.entity.LivingEntity.updatingUsingItem(LivingEntity.java:2896) ~[forge-1.19.3-44.1.5_mapped_official_1.19.3-recomp.jar%23186!/:?] {re:classloading}
+	at net.minecraft.world.entity.LivingEntity.tick(LivingEntity.java:2267) ~[forge-1.19.3-44.1.5_mapped_official_1.19.3-recomp.jar%23186!/:?] {re:classloading}
+	at net.minecraft.world.entity.player.Player.tick(Player.java:237) ~[forge-1.19.3-44.1.5_mapped_official_1.19.3-recomp.jar%23186!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.level.ServerPlayer.doTick(ServerPlayer.java:462) ~[forge-1.19.3-44.1.5_mapped_official_1.19.3-recomp.jar%23186!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.tick(ServerGamePacketListenerImpl.java:259) ~[forge-1.19.3-44.1.5_mapped_official_1.19.3-recomp.jar%23186!/:?] {re:classloading}
+	at net.minecraft.network.Connection.tick(Connection.java:248) ~[forge-1.19.3-44.1.5_mapped_official_1.19.3-recomp.jar%23186!/:?] {re:classloading}
+	at net.minecraft.server.network.ServerConnectionListener.tick(ServerConnectionListener.java:143) ~[forge-1.19.3-44.1.5_mapped_official_1.19.3-recomp.jar%23186!/:?] {re:classloading}
+	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:890) ~[forge-1.19.3-44.1.5_mapped_official_1.19.3-recomp.jar%23186!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:816) ~[forge-1.19.3-44.1.5_mapped_official_1.19.3-recomp.jar%23186!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.client.server.IntegratedServer.tickServer(IntegratedServer.java:85) ~[forge-1.19.3-44.1.5_mapped_official_1.19.3-recomp.jar%23186!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:664) ~[forge-1.19.3-44.1.5_mapped_official_1.19.3-recomp.jar%23186!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:251) ~[forge-1.19.3-44.1.5_mapped_official_1.19.3-recomp.jar%23186!/:?] {re:classloading,pl:accesstransformer:B}
+	at java.lang.Thread.run(Thread.java:833) ~[?:?] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at java.util.Objects.requireNonNull(Objects.java:334) ~[?:?] {}
+	at net.minecraftforge.registries.RegistryObject.get(RegistryObject.java:204) ~[forge-1.19.3-44.1.5_mapped_official_1.19.3-recomp.jar%23185%23192!/:?] {re:classloading}
+	at com.huawenfangsong.featuredkitchen.item.GigApple.finishUsingItem(GigApple.java:18) ~[%23191!/:?] {re:classloading}
+	at net.minecraft.world.item.ItemStack.finishUsingItem(ItemStack.java:278) ~[forge-1.19.3-44.1.5_mapped_official_1.19.3-recomp.jar%23186!/:?] {re:classloading,xf:fml:forge:itemstack}
+	at net.minecraft.world.entity.LivingEntity.completeUsingItem(LivingEntity.java:3029) ~[forge-1.19.3-44.1.5_mapped_official_1.19.3-recomp.jar%23186!/:?] {re:classloading}
+	at net.minecraft.server.level.ServerPlayer.completeUsingItem(ServerPlayer.java:1116) ~[forge-1.19.3-44.1.5_mapped_official_1.19.3-recomp.jar%23186!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.entity.LivingEntity.updateUsingItem(LivingEntity.java:2911) ~[forge-1.19.3-44.1.5_mapped_official_1.19.3-recomp.jar%23186!/:?] {re:classloading}
+	at net.minecraft.server.level.ServerPlayer.updateUsingItem(ServerPlayer.java:1655) ~[forge-1.19.3-44.1.5_mapped_official_1.19.3-recomp.jar%23186!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.world.entity.LivingEntity.updatingUsingItem(LivingEntity.java:2896) ~[forge-1.19.3-44.1.5_mapped_official_1.19.3-recomp.jar%23186!/:?] {re:classloading}
+	at net.minecraft.world.entity.LivingEntity.tick(LivingEntity.java:2267) ~[forge-1.19.3-44.1.5_mapped_official_1.19.3-recomp.jar%23186!/:?] {re:classloading}
+	at net.minecraft.world.entity.player.Player.tick(Player.java:237) ~[forge-1.19.3-44.1.5_mapped_official_1.19.3-recomp.jar%23186!/:?] {re:classloading,pl:accesstransformer:B}
+-- Player being ticked --
+Details:
+	Entity Type: minecraft:player (net.minecraft.server.level.ServerPlayer)
+	Entity ID: 85
+	Entity Name: Dev
+	Entity's Exact location: -81.62, -58.63, 5.66
+	Entity's Block location: World: (-82,-59,5), Section: (at 14,5,5 in -6,-4,0; chunk contains blocks -96,-64,0 to -81,319,15), Region: (-1,0; contains chunks -32,0 to -1,31, blocks -512,-64,0 to -1,319,511)
+	Entity's Momentum: 0.00, 0.00, 0.00
+	Entity's Passengers: []
+	Entity's Vehicle: null
+Stacktrace:
+	at net.minecraft.server.level.ServerPlayer.doTick(ServerPlayer.java:462) ~[forge-1.19.3-44.1.5_mapped_official_1.19.3-recomp.jar%23186!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.network.ServerGamePacketListenerImpl.tick(ServerGamePacketListenerImpl.java:259) ~[forge-1.19.3-44.1.5_mapped_official_1.19.3-recomp.jar%23186!/:?] {re:classloading}
+	at net.minecraft.network.Connection.tick(Connection.java:248) ~[forge-1.19.3-44.1.5_mapped_official_1.19.3-recomp.jar%23186!/:?] {re:classloading}
+	at net.minecraft.server.network.ServerConnectionListener.tick(ServerConnectionListener.java:143) ~[forge-1.19.3-44.1.5_mapped_official_1.19.3-recomp.jar%23186!/:?] {re:classloading}
+	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:890) ~[forge-1.19.3-44.1.5_mapped_official_1.19.3-recomp.jar%23186!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:816) ~[forge-1.19.3-44.1.5_mapped_official_1.19.3-recomp.jar%23186!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.client.server.IntegratedServer.tickServer(IntegratedServer.java:85) ~[forge-1.19.3-44.1.5_mapped_official_1.19.3-recomp.jar%23186!/:?] {re:classloading,pl:runtimedistcleaner:A}
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:664) ~[forge-1.19.3-44.1.5_mapped_official_1.19.3-recomp.jar%23186!/:?] {re:classloading,pl:accesstransformer:B}
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:251) ~[forge-1.19.3-44.1.5_mapped_official_1.19.3-recomp.jar%23186!/:?] {re:classloading,pl:accesstransformer:B}
+	at java.lang.Thread.run(Thread.java:833) ~[?:?] {}
+
+
+-- System Details --
+Details:
+	Minecraft Version: 1.19.3
+	Minecraft Version ID: 1.19.3
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 17.0.1, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode, sharing), Oracle Corporation
+	Memory: 992990608 bytes (946 MiB) / 2399141888 bytes (2288 MiB) up to 8543797248 bytes (8148 MiB)
+	CPUs: 16
+	Processor Vendor: GenuineIntel
+	Processor Name: 12th Gen Intel(R) Core(TM) i5-12600KF
+	Identifier: Intel64 Family 6 Model 151 Stepping 2
+	Microarchitecture: Alder Lake
+	Frequency (GHz): 3.69
+	Number of physical packages: 1
+	Number of physical CPUs: 10
+	Number of logical CPUs: 16
+	Graphics card #0 name: NVIDIA GeForce GTX 1050 Ti
+	Graphics card #0 vendor: NVIDIA (0x10de)
+	Graphics card #0 VRAM (MB): 4095.00
+	Graphics card #0 deviceId: 0x1c82
+	Graphics card #0 versionInfo: DriverVersion=31.0.15.2737
+	Memory slot #0 capacity (MB): 16384.00
+	Memory slot #0 clockSpeed (GHz): 3.20
+	Memory slot #0 type: DDR4
+	Memory slot #1 capacity (MB): 16384.00
+	Memory slot #1 clockSpeed (GHz): 3.20
+	Memory slot #1 type: DDR4
+	Virtual memory max (MB): 37830.02
+	Virtual memory used (MB): 18793.61
+	Swap memory total (MB): 5252.15
+	Swap memory used (MB): 110.99
+	JVM Flags: 1 total; -XX:HeapDumpPath=MojangTricksIntelDriversForPerformance_javaw.exe_minecraft.exe.heapdump
+	Server Running: true
+	Player Count: 1 / 8; [ServerPlayer['Dev'/85, l='ServerLevel[新的世界]', x=-81.62, y=-58.63, z=5.66]]
+	Data Packs: vanilla, mod:forge, mod:featured_kitchen
+	Enabled Feature Flags: minecraft:vanilla
+	World Generation: Experimental
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Definitely; Client brand changed to 'forge'; Server brand changed to 'forge'
+	Launched Version: MOD_DEV
+	ModLauncher: 10.0.8+10.0.8+main.0ef7e830
+	ModLauncher launch target: forgeclientuserdev
+	ModLauncher naming: mcp
+	ModLauncher services: 
+		mixin-0.8.5.jar mixin PLUGINSERVICE 
+		eventbus-6.0.3.jar eventbus PLUGINSERVICE 
+		fmlloader-1.19.3-44.1.5.jar slf4jfixer PLUGINSERVICE 
+		fmlloader-1.19.3-44.1.5.jar object_holder_definalize PLUGINSERVICE 
+		fmlloader-1.19.3-44.1.5.jar runtime_enum_extender PLUGINSERVICE 
+		fmlloader-1.19.3-44.1.5.jar capability_token_subclass PLUGINSERVICE 
+		accesstransformers-8.0.4.jar accesstransformer PLUGINSERVICE 
+		fmlloader-1.19.3-44.1.5.jar runtimedistcleaner PLUGINSERVICE 
+		modlauncher-10.0.8.jar mixin TRANSFORMATIONSERVICE 
+		modlauncher-10.0.8.jar fml TRANSFORMATIONSERVICE 
+	FML Language Providers: 
+		minecraft@1.0
+		lowcodefml@null
+		javafml@null
+	Mod List: 
+		forge-1.19.3-44.1.5_mapped_official_1.19.3-recomp.|Minecraft                     |minecraft                     |1.19.3              |DONE      |Manifest: a1:d4:5e:04:4f:d3:d6:e0:7b:37:97:cf:77:b0:de:ad:4a:47:ce:8c:96:49:5f:0a:cf:8c:ae:b2:6d:4b:8a:3f
+		                                                  |Forge                         |forge                         |44.1.5              |DONE      |Manifest: NOSIGNATURE
+		main                                              |Featured Kitchen              |featured_kitchen              |0.0NONE             |DONE      |Manifest: NOSIGNATURE
+	Crash Report UUID: 983718eb-cce5-4e65-858a-42909f61508d
+	FML: 44.1
+	Forge: net.minecraftforge:44.1.5

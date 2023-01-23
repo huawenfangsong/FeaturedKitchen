@@ -1,0 +1,10 @@
+{
+    "entity.player.eat_gigapple": {
+        "sounds": [
+          {
+            "name": "featured_kitchen:item/gigapple",
+            "stream": true
+          }
+        ]
+      }
+}
