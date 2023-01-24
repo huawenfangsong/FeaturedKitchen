@@ -18,6 +18,7 @@ public class ModTabs {
                 .displayItems((featureFlags,output,hasOp)->{
                     output.accept(Items.CARROT_OF_UNDYING_ITEM.get());
                     output.accept(Items.GIGAPPLE.get());
+                    output.accept(Items.NETHER_WART_SOUP.get());
                     output.accept(Items.SEA_STEW.get());
                 }));
     }
