@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "D": {
+      "item": "minecraft:big_dripleaf"
+    },
+    "G": {
+      "item": "minecraft:glow_lichen"
+    },
+    "M": {
+      "item": "minecraft:moss_block"
+    }
+  },
+  "pattern": [
+    "DDD",
+    "MMG",
+    "DDD"
+  ],
+  "result": {
+    "count": 3,
+    "item": "featured_kitchen:dripleaf_rolls"
+  }
+}

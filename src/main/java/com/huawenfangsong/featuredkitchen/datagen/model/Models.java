@@ -8,6 +8,5 @@ public class Models {
         var helper = event.getExistingFileHelper();
         // 添加模型文件的 DataProvider
         gen.addProvider(true, new ModelProvider(gen, helper));
-//        gen.addProvider(new StateProvider(gen, helper));
     }
 }

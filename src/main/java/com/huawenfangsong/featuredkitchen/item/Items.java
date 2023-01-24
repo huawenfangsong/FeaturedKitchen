@@ -29,10 +29,10 @@ public class Items {
         PLANT_MAN = ITEMS.register("plant_man",
                 () -> new Item(new Item.Properties().food(Foods.GOLDEN_CARROT)));
         DRIPLEAF_ROLLS = ITEMS.register("dripleaf_rolls",
-                () -> new Item(new Item.Properties().food(Foods.BAKED_POTATO)));
+                () -> new Item(new Item.Properties().food(Foods.CARROT)));
 
         GIGAPPLE = ITEMS.register("gigapple",
-                () -> new GigApple(new Item.Properties().rarity(Rarity.RARE).food((new FoodProperties.Builder()).nutrition(6).saturationMod(1.2F)
+                () -> new GigApple(new Item.Properties().rarity(Rarity.EPIC).food((new FoodProperties.Builder()).nutrition(6).saturationMod(1.2F)
                         .effect(new MobEffectInstance(MobEffects.REGENERATION, 400, 1), 1.0F)
                         .effect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 6000, 0), 1.0F)
                         .effect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 6000, 0), 1.0F)
@@ -46,7 +46,7 @@ public class Items {
         SEA_STEW =ITEMS.register("sea_stew",
                 () -> new BowlsFood(new Item.Properties().food(Foods.GOLDEN_CARROT).stacksTo(16)));
         MOSS_STEW =ITEMS.register("moss_stew",
-                () -> new BowlsFood(new Item.Properties().food(Foods.MUSHROOM_STEW).stacksTo(16)));
+                () -> new BowlsFood(new Item.Properties().food(Foods.CARROT).stacksTo(16)));
         FUNGUS_STEW =ITEMS.register("fungus_stew",
                 () -> new BowlsFood(new Item.Properties().food(Foods.MUSHROOM_STEW).stacksTo(16)));
 

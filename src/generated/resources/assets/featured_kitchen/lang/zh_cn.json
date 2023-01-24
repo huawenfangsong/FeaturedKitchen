@@ -1,13 +1,16 @@
 {
-  "advancements.kitchen.it_live.description": "“杀害”一只不死萝卜",
+  "advancements.kitchen.it_live.description": "“杀害”一个植物人",
   "advancements.kitchen.it_live.title": "它是活的！",
   "advancements.kitchen.root.description": "那些食物吃起来不太妙",
   "advancements.kitchen.root.title": "厨房",
   "advancements.kitchen.sea_stew.description": "喝下一碗海洋煲",
   "advancements.kitchen.sea_stew.title": "海的味道！",
-  "item.featured_kitchen.carrot_of_undying": "不死萝卜",
+  "item.featured_kitchen.dripleaf_rolls": "垂滴叶卷",
+  "item.featured_kitchen.fungus_stew": "真菌煲",
   "item.featured_kitchen.gigapple": "Gigapple",
+  "item.featured_kitchen.moss_stew": "苔藓煲",
   "item.featured_kitchen.nether_wart_soup": "地狱疙瘩汤",
+  "item.featured_kitchen.plant_man": "植物人",
   "item.featured_kitchen.sea_stew": "海洋煲",
   "itemGroup.featured_kitchen": "特色厨房"
 }

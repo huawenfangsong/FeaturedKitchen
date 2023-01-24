@@ -1,7 +1,7 @@
 {
 	"display": {
 		"icon": {
-			"item": "featured_kitchen:carrot_of_undying"
+			"item": "featured_kitchen:plant_man"
 		},
 		"title": {
 			"translate": "advancements.kitchen.it_live.title"
@@ -20,7 +20,7 @@
 			"item": 
 			  {
 				"items": [
-				  "featured_kitchen:carrot_of_undying"
+				  "featured_kitchen:plant_man"
 				]
 			  }
 		  },

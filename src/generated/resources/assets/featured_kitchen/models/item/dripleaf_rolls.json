@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "featured_kitchen:item/carrot_of_undying"
+    "layer0": "featured_kitchen:item/dripleaf_rolls"
   }
 }

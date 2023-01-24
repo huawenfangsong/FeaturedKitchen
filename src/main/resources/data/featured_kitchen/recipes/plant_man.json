@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "key": {
+    "F": {
+      "item": "minecraft:flowering_azalea_leaves"
+    },
+    "M": {
+      "item": "minecraft:moss_block"
+    }
+  },
+  "pattern": [
+    " F ",
+    "MMM",
+    " M "
+  ],
+  "result": {
+    "item": "featured_kitchen:plant_man"
+  }
+}
