@@ -27,7 +27,7 @@ public class Items {
 
     public static void registry() {
         PLANT_MAN = ITEMS.register("plant_man",
-                () -> new Item(new Item.Properties().food(Foods.GOLDEN_CARROT)));
+                () -> new Item(new Item.Properties().food(Foods.BREAD)));
         DRIPLEAF_ROLLS = ITEMS.register("dripleaf_rolls",
                 () -> new Item(new Item.Properties().food(Foods.CARROT)));
 
@@ -36,6 +36,7 @@ public class Items {
                         .effect(new MobEffectInstance(MobEffects.REGENERATION, 400, 1), 1.0F)
                         .effect(new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 6000, 0), 1.0F)
                         .effect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 6000, 0), 1.0F)
+                        .effect(new MobEffectInstance(MobEffects.DAMAGE_BOOST, 6000, 2), 1.0F)
                         .effect(new MobEffectInstance(MobEffects.ABSORPTION, 2400, 3), 1.0F)
                         .alwaysEat().build())));
         NETHER_WART_SOUP =ITEMS.register("nether_wart_soup",

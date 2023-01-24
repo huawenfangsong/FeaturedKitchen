@@ -6,11 +6,14 @@
     },
     "M": {
       "item": "minecraft:moss_block"
+    },
+    "G": {
+      "item": "minecraft:glow_berries"
     }
   },
   "pattern": [
-    " F ",
-    "MMM",
+    " G ",
+    "MFM",
     " M "
   ],
   "result": {
