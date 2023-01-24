@@ -16,31 +16,10 @@ public class BowlsFood extends Item {
     }
     @Override
     public @NotNull ItemStack finishUsingItem(@NotNull ItemStack pStack, @NotNull Level pLevel, @NotNull LivingEntity pEntityLiving) {
-        return super.finishUsingItem(createFilledResult(pStack,(Player) pEntityLiving,new ItemStack(Items.BOWL),true), pLevel, pEntityLiving);
-    }
-
-    protected ItemStack fill(ItemStack pStack, Player pPlayer, ItemStack pFilledStack) {
-        return createFilledResult(pStack, pPlayer, pFilledStack,true);
-    }
-
-    public static ItemStack createFilledResult(ItemStack pEmptyStack, Player pPlayer, ItemStack pFilledStack, boolean pPreventDuplicates) {
-        boolean flag = pPlayer.getAbilities().instabuild;
-        if (pPreventDuplicates && flag) {
-            if (!pPlayer.getInventory().contains(pFilledStack)) {
-                pPlayer.getInventory().add(pFilledStack);
-            }
-
-            return pEmptyStack;
-        } else {
-            if (pEmptyStack.isEmpty()) {
-                return pFilledStack;
-            } else {
-                if (!pPlayer.getInventory().add(pFilledStack)) {
-                    pPlayer.drop(pFilledStack, false);
-                }
-
-                return pEmptyStack;
-            }
+        if (!((Player)pEntityLiving).getAbilities().instabuild
+            &&!((Player)pEntityLiving).getInventory().add(new ItemStack(Items.BOWL))) {
+            ((Player)pEntityLiving).drop(new ItemStack(Items.BOWL), false);
         }
+        return super.finishUsingItem(pStack, pLevel, pEntityLiving);
     }
 }

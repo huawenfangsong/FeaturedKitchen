@@ -14,6 +14,7 @@ public class ModelProvider extends ItemModelProvider {
     protected void registerModels() {
         this.singleTexture("carrot_of_undying", new ResourceLocation("item/generated"), "layer0", new ResourceLocation(FeaturedKitchen.MODID, "item/" + "carrot_of_undying"));
         this.singleTexture("gigapple", new ResourceLocation("item/generated"), "layer0", new ResourceLocation(FeaturedKitchen.MODID, "item/" + "gigapple"));
+        this.singleTexture("nether_wart_soup", new ResourceLocation("item/generated"), "layer0", new ResourceLocation(FeaturedKitchen.MODID, "item/" + "nether_wart_soup"));
         this.singleTexture("sea_stew", new ResourceLocation("item/generated"), "layer0", new ResourceLocation(FeaturedKitchen.MODID, "item/" + "sea_stew"));
 
     }

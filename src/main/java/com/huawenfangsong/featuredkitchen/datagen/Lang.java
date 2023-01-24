@@ -33,6 +33,7 @@ public class Lang {
             this.add("itemGroup.featured_kitchen", "Featured Kitchen");
             this.add("item.featured_kitchen.carrot_of_undying","Carrot Of Undying");
             this.add("item.featured_kitchen.gigapple","Gigapple");
+            this.add("item.featured_kitchen.nether_wart_soup","Nether Wart Soup");
             this.add("item.featured_kitchen.sea_stew","Sea Stew");
         }
     }
@@ -55,6 +56,7 @@ public class Lang {
             this.add("itemGroup.featured_kitchen", "特色厨房");
             this.add("item.featured_kitchen.carrot_of_undying","不死萝卜");
             this.add("item.featured_kitchen.gigapple","Gigapple");
+            this.add("item.featured_kitchen.nether_wart_soup","地狱疙瘩汤");
             this.add("item.featured_kitchen.sea_stew","海洋煲");
         }
     }

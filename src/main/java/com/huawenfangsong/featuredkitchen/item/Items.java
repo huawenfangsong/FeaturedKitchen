@@ -18,6 +18,7 @@ public class Items {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MODID);
     public static RegistryObject<Item> CARROT_OF_UNDYING_ITEM;
     public static RegistryObject<Item> GIGAPPLE;
+    public static RegistryObject<Item> NETHER_WART_SOUP;
 
     public static RegistryObject<Item> SEA_STEW;
     public static void registry() {
@@ -30,6 +31,10 @@ public class Items {
                         .effect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 6000, 0), 1.0F)
                         .effect(new MobEffectInstance(MobEffects.ABSORPTION, 2400, 3), 1.0F)
                         .alwaysEat().build())));
+        SEA_STEW =ITEMS.register("nether_wart_soup",
+                () -> new BowlsFood(new Item.Properties().food((new FoodProperties.Builder()).nutrition(6).saturationMod(1.2F)
+                        .effect(new MobEffectInstance(MobEffects.CONFUSION, 160, 0), 1.0F)
+                        .build()).stacksTo(16)));
         SEA_STEW =ITEMS.register("sea_stew",
                 () -> new BowlsFood(new Item.Properties().food(Foods.GOLDEN_CARROT).stacksTo(16)));
         ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
