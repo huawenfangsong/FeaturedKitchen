@@ -16,14 +16,21 @@ import static com.huawenfangsong.featuredkitchen.FeaturedKitchen.MODID;
 
 public class Items {
     public static final DeferredRegister<Item> ITEMS = DeferredRegister.create(ForgeRegistries.ITEMS, MODID);
-    public static RegistryObject<Item> CARROT_OF_UNDYING_ITEM;
+    public static RegistryObject<Item> PLANT_MAN;
+    public static RegistryObject<Item> DRIPLEAF_ROLLS;
     public static RegistryObject<Item> GIGAPPLE;
     public static RegistryObject<Item> NETHER_WART_SOUP;
 
     public static RegistryObject<Item> SEA_STEW;
+    public static RegistryObject<Item> MOSS_STEW;
+    public static RegistryObject<Item> FUNGUS_STEW;
+
     public static void registry() {
-        CARROT_OF_UNDYING_ITEM = ITEMS.register("carrot_of_undying",
+        PLANT_MAN = ITEMS.register("plant_man",
                 () -> new Item(new Item.Properties().food(Foods.GOLDEN_CARROT)));
+        DRIPLEAF_ROLLS = ITEMS.register("dripleaf_rolls",
+                () -> new Item(new Item.Properties().food(Foods.BAKED_POTATO)));
+
         GIGAPPLE = ITEMS.register("gigapple",
                 () -> new GigApple(new Item.Properties().rarity(Rarity.RARE).food((new FoodProperties.Builder()).nutrition(6).saturationMod(1.2F)
                         .effect(new MobEffectInstance(MobEffects.REGENERATION, 400, 1), 1.0F)
@@ -31,12 +38,18 @@ public class Items {
                         .effect(new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 6000, 0), 1.0F)
                         .effect(new MobEffectInstance(MobEffects.ABSORPTION, 2400, 3), 1.0F)
                         .alwaysEat().build())));
-        SEA_STEW =ITEMS.register("nether_wart_soup",
+        NETHER_WART_SOUP =ITEMS.register("nether_wart_soup",
                 () -> new BowlsFood(new Item.Properties().food((new FoodProperties.Builder()).nutrition(6).saturationMod(1.2F)
                         .effect(new MobEffectInstance(MobEffects.CONFUSION, 160, 0), 1.0F)
                         .build()).stacksTo(16)));
+
         SEA_STEW =ITEMS.register("sea_stew",
                 () -> new BowlsFood(new Item.Properties().food(Foods.GOLDEN_CARROT).stacksTo(16)));
+        MOSS_STEW =ITEMS.register("moss_stew",
+                () -> new BowlsFood(new Item.Properties().food(Foods.MUSHROOM_STEW).stacksTo(16)));
+        FUNGUS_STEW =ITEMS.register("fungus_stew",
+                () -> new BowlsFood(new Item.Properties().food(Foods.MUSHROOM_STEW).stacksTo(16)));
+
         ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
 
     }
