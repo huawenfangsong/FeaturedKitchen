@@ -1,13 +1,13 @@
 {
 	"display": {
 		"icon": {
-			"item": "featured_kitchen:plant_man"
+			"item": "featured_kitchen:dripleaf_rolls"
 		},
 		"title": {
-			"translate": "advancements.kitchen.it_live.title"
+			"translate": "advancements.kitchen.dripleaf_rolls.title"
 		},
 		"description": {
-			"translate": "advancements.kitchen.it_live.description"
+			"translate": "advancements.kitchen.dripleaf_rolls.description"
 		},
 		"show_toast": true,
 		"announce_to_chat":true,
@@ -15,12 +15,12 @@
 	},
 	"parent": "featured_kitchen:kitchen/moss_stew",
 	"criteria": {
-		"it_live": {
+		"dripleaf_rolls": {
 		  "conditions": {
 			"item": 
 			  {
 				"items": [
-				  "featured_kitchen:plant_man"
+				  "featured_kitchen:dripleaf_rolls"
 				]
 			  }
 		  },
@@ -29,7 +29,7 @@
 	  },
 	  "requirements": [
 		[
-		  "it_live"
+		  "dripleaf_rolls"
 		]
 	  ]
 }

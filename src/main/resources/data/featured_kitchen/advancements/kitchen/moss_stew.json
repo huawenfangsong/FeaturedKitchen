@@ -1,26 +1,26 @@
 {
 	"display": {
 		"icon": {
-			"item": "featured_kitchen:plant_man"
+			"item": "featured_kitchen:moss_stew"
 		},
 		"title": {
-			"translate": "advancements.kitchen.it_live.title"
+			"translate": "advancements.kitchen.moss_stew.title"
 		},
 		"description": {
-			"translate": "advancements.kitchen.it_live.description"
+			"translate": "advancements.kitchen.moss_stew.description"
 		},
 		"show_toast": true,
 		"announce_to_chat":true,
 		"hidden": false
 	},
-	"parent": "featured_kitchen:kitchen/moss_stew",
+	"parent": "featured_kitchen:kitchen/root",
 	"criteria": {
-		"it_live": {
+		"moss_stew": {
 		  "conditions": {
 			"item": 
 			  {
 				"items": [
-				  "featured_kitchen:plant_man"
+				  "featured_kitchen:moss_stew"
 				]
 			  }
 		  },
@@ -29,7 +29,7 @@
 	  },
 	  "requirements": [
 		[
-		  "it_live"
+		  "moss_stew"
 		]
 	  ]
 }

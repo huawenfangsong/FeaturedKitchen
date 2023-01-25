@@ -1,26 +1,26 @@
 {
 	"display": {
 		"icon": {
-			"item": "featured_kitchen:plant_man"
+			"item": "featured_kitchen:nether_wart_soup"
 		},
 		"title": {
-			"translate": "advancements.kitchen.it_live.title"
+			"translate": "advancements.kitchen.nether_wart_soup.title"
 		},
 		"description": {
-			"translate": "advancements.kitchen.it_live.description"
+			"translate": "advancements.kitchen.nether_wart_soup.description"
 		},
 		"show_toast": true,
 		"announce_to_chat":true,
 		"hidden": false
 	},
-	"parent": "featured_kitchen:kitchen/moss_stew",
+	"parent": "featured_kitchen:kitchen/fungus_stew",
 	"criteria": {
-		"it_live": {
+		"nether_wart_soup": {
 		  "conditions": {
 			"item": 
 			  {
 				"items": [
-				  "featured_kitchen:plant_man"
+				  "featured_kitchen:nether_wart_soup"
 				]
 			  }
 		  },
@@ -29,7 +29,7 @@
 	  },
 	  "requirements": [
 		[
-		  "it_live"
+		  "nether_wart_soup"
 		]
 	  ]
 }
