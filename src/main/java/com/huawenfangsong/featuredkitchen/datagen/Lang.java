@@ -38,6 +38,7 @@ public class Lang {
             this.add("item.featured_kitchen.sea_stew","Sea Stew");
             this.add("item.featured_kitchen.moss_stew","Moss Stew");
             this.add("item.featured_kitchen.fungus_stew","Fungus Stew");
+            this.add("item.featured_kitchen.salt","Salt");
         }
     }
 
@@ -64,6 +65,7 @@ public class Lang {
             this.add("item.featured_kitchen.sea_stew","海洋煲");
             this.add("item.featured_kitchen.moss_stew","苔藓煲");
             this.add("item.featured_kitchen.fungus_stew","真菌煲");
+            this.add("item.featured_kitchen.salt","盐");
         }
     }
 }

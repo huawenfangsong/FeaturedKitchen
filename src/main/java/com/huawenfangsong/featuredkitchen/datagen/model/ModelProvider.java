@@ -19,5 +19,6 @@ public class ModelProvider extends ItemModelProvider {
         this.singleTexture("sea_stew", new ResourceLocation("item/generated"), "layer0", new ResourceLocation(FeaturedKitchen.MODID, "item/" + "sea_stew"));
         this.singleTexture("moss_stew", new ResourceLocation("item/generated"), "layer0", new ResourceLocation(FeaturedKitchen.MODID, "item/" + "moss_stew"));
         this.singleTexture("fungus_stew", new ResourceLocation("item/generated"), "layer0", new ResourceLocation(FeaturedKitchen.MODID, "item/" + "fungus_stew"));
+        this.singleTexture("salt", new ResourceLocation("item/generated"), "layer0", new ResourceLocation("minecraft", "item/" + "sugar"));
     }
 }

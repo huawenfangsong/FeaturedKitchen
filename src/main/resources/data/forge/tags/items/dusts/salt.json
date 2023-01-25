@@ -1,0 +1,7 @@
+{
+ "replace": false,
+ "values": [
+  "featured_kitchen:salt",
+  {"required":false,"id":"pamhc2foodcore:saltitem"}
+ ]
+}

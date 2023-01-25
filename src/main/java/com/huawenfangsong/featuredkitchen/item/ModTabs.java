@@ -23,6 +23,7 @@ public class ModTabs {
                     output.accept(Items.SEA_STEW.get());
                     output.accept(Items.MOSS_STEW.get());
                     output.accept(Items.FUNGUS_STEW.get());
+                    output.accept(Items.SALT.get());
                 }));
     }
 }
