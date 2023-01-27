@@ -25,7 +25,10 @@ public class Items {
     public static RegistryObject<Item> MOSS_STEW;
     public static RegistryObject<Item> FUNGUS_STEW;
     public static RegistryObject<Item> SALT;
+    public static RegistryObject<Item> HAWROLLS;
 
+    public static RegistryObject<Item> SLIME_JELLY;
+    public static RegistryObject<Item> SUGAR_CANE_SOUP;
     public static void registry() {
         PLANT_MAN = ITEMS.register("plant_man",
                 () -> new Item(new Item.Properties().food(Foods.BREAD)));
@@ -53,6 +56,13 @@ public class Items {
                 () -> new BowlsFood(new Item.Properties().food(Foods.MUSHROOM_STEW).stacksTo(16)));
         SALT =ITEMS.register("salt",
                 () -> new Item(new Item.Properties()));
+        HAWROLLS= ITEMS.register("hawrolls",
+                        () -> new Item(new Item.Properties().food(Foods.BREAD)));
+        SLIME_JELLY= ITEMS.register("slime_jelly",
+                () -> new BowlsFood(new Item.Properties().food(Foods.ROTTEN_FLESH)));
+        SUGAR_CANE_SOUP= ITEMS.register("sugar_cane_soup",
+                () -> new BowlsFood(new Item.Properties().food(Foods.CARROT)));
+
         ITEMS.register(FMLJavaModLoadingContext.get().getModEventBus());
 
     }

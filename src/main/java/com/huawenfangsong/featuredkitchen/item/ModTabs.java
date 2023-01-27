@@ -24,6 +24,9 @@ public class ModTabs {
                     output.accept(Items.MOSS_STEW.get());
                     output.accept(Items.FUNGUS_STEW.get());
                     output.accept(Items.SALT.get());
+                    output.accept(Items.HAWROLLS.get());
+                    output.accept(Items.SLIME_JELLY.get());
+                    output.accept(Items.SUGAR_CANE_SOUP.get());
                 }));
     }
 }

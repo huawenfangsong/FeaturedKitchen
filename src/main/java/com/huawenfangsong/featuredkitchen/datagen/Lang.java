@@ -38,6 +38,8 @@ public class Lang {
             this.add("advancements.kitchen.nether_wart_soup.description","Drink a bowl of Wart Soup");
             this.add("advancements.kitchen.dripleaf_rolls.title","Is this Sushi?");
             this.add("advancements.kitchen.dripleaf_rolls.description","Eat a Dripleaf Rolls");
+            this.add("advancements.kitchen.salt.title","The Veins are also Weeping");
+            this.add("advancements.kitchen.salt.description","Extract salt from Weeping Veins");
             this.add("itemGroup.featured_kitchen", "Featured Kitchen");
             this.add("item.featured_kitchen.plant_man","Plant Man");
             this.add("item.featured_kitchen.dripleaf_rolls","Dripleaf_Rolls");
@@ -47,6 +49,9 @@ public class Lang {
             this.add("item.featured_kitchen.moss_stew","Moss Stew");
             this.add("item.featured_kitchen.fungus_stew","Fungus Stew");
             this.add("item.featured_kitchen.salt","Salt");
+            this.add("item.featured_kitchen.hawrolls","Hawrolls");
+            this.add("item.featured_kitchen.slime_jelly","Slime Jelly");
+            this.add("item.featured_kitchen.sugar_cane_soup","Super Cane Soup");
         }
     }
 
@@ -73,15 +78,20 @@ public class Lang {
             this.add("advancements.kitchen.nether_wart_soup.description","喝下一碗”地狱“疙瘩汤");
             this.add("advancements.kitchen.dripleaf_rolls.title","这是寿司吗？");
             this.add("advancements.kitchen.dripleaf_rolls.description","吃下一个垂滴叶卷");
+            this.add("advancements.kitchen.salt.title","藤蔓也会哭泣");
+            this.add("advancements.kitchen.salt.description","从垂泪藤中提取盐");
             this.add("itemGroup.featured_kitchen", "特色厨房");
             this.add("item.featured_kitchen.plant_man","植物人");
             this.add("item.featured_kitchen.dripleaf_rolls","垂滴叶卷");
             this.add("item.featured_kitchen.gigapple","Gigapple");
-            this.add("item.featured_kitchen.nether_wart_soup","”地狱“疙瘩汤");
+            this.add("item.featured_kitchen.nether_wart_soup","“地狱”疙瘩汤");
             this.add("item.featured_kitchen.sea_stew","海洋煲");
             this.add("item.featured_kitchen.moss_stew","苔藓煲");
             this.add("item.featured_kitchen.fungus_stew","真菌煲");
             this.add("item.featured_kitchen.salt","盐");
+            this.add("item.featured_kitchen.hawrolls","果丹皮");
+            this.add("item.featured_kitchen.slime_jelly","史莱姆果冻");
+            this.add("item.featured_kitchen.sugar_cane_soup","甘蔗汤");
         }
     }
 }

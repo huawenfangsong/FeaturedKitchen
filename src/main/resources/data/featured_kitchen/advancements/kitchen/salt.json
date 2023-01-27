@@ -1,0 +1,36 @@
+{
+	"display": {
+		"icon": {
+			"item": "featured_kitchen:salt"
+		},
+		"title": {
+			"translate": "advancements.kitchen.salt.title"
+		},
+		"description": {
+			"translate": "advancements.kitchen.salt.description"
+		},
+		"show_toast": true,
+		"announce_to_chat":true,
+		"hidden": false
+	},
+	"parent": "featured_kitchen:kitchen/fungus_stew",
+	"criteria": {
+		"salt": {
+		  "conditions": {
+			"items": [
+				{
+				  "items": [
+					"featured_kitchen:salt"
+				  ]
+				}
+			  ]
+		  },
+		  "trigger": "minecraft:inventory_changed"
+		}
+	  },
+	  "requirements": [
+		[
+		  "salt"
+		]
+	  ]
+}
